@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <title> Model Visualizer </title>
+        <meta name="viewport" , content="width=device_width initial-scale=1">
+        <link rel = "stylesheet" href="style.css"> 
+    </head>
+
+    <body>
+
+        <div> 
+            <b style="font-size: 25px">
+                <u>Select Model Configuration and Visualizer Charts</u>
+            </b> 
+        </div>
+
+        <br>
+        <br>
+
+        <!-- <div class="dropdown">
+            <button class="dropbtn">Steps</button>
+            <div class="dropdown-content">
+                <a href="#">30</a>
+                <a href="#">50</a>
+                <a href="#">100</a>
+            </div> 
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Batch Size</button>
+            <div class="dropdown-content">
+                <a href="#">64</a>
+                <a href="#">128</a>
+                <a href="#">256</a>
+            </div> 
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Learning Rate</button>
+            <div class="dropdown-content">
+                <a href="#">0.1</a>
+                <a href="#">0.01</a>
+                <a href="#">0.001</a>
+            </div> 
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Optimizer</button>
+            <div class="dropdown-content">
+                <a href="#">Adam</a>
+                <a href="#">RMS Prop</a>
+                <a href="#">Momentum</a>
+            </div> 
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Train Size</button>
+            <div class="dropdown-content">
+                <a href="#">500</a>
+                <a href="#">1000</a>
+                <a href="#">1500</a>
+            </div> 
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Test Size</button>
+            <div class="dropdown-content">
+                <a href="#">100</a>
+                <a href="#">200</a>
+                <a href="#">300</a>
+            </div> 
+        </div> -->
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Steps</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Batch Size</option>
+            <option value="64">64</option>
+            <option value="128">128</option>
+            <option value="256">256</option>
+        </select>
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Learning Rate</option>
+            <option value="0.1">0.1</option>
+            <option value="0.01">0.01</option>
+            <option value="0.001">0.001</option>
+        </select>
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Optmizer</option>
+            <option value="Adam">Adam</option>
+            <option value="RMS Prop">RMS Prop</option>
+            <option value="Momentum">Momentum</option>
+        </select>
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Train Size</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+            <option value="1500">1500</option>
+        </select>
+
+        <select>
+            <option value="" disabled="disabled" selected="selected">Test Size</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <div class="slidecontainer" style="font-size: 18px">
+            Threshold
+            <br>
+            0%<input type="range" min="1" max="100" value="35" class="slider" id="myRange">100%
+        </div>
+
+        <br>
+
+        <div>
+            <label class="container">Model Composer
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Model Metrics
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Training Loss
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Error Histogram
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">ROC Curve
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <label class="container">Bottleneck Plot
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
